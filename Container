@@ -10,7 +10,7 @@ LC_ALL=C.UTF-8
     echo "This is what happens when you run the container..."
     export PATH=/opt/anaconda/bin:${PATH}    
 
-%post - Laddar ned bakgrundsprogram som behövs
+%post laddar ned bakgrundsprogram som behövs
     echo "Hello from inside the container"
     apt-get update
     apt-get -y install wget git bzip2 build-essential gcc zlib1g-dev language-pack-en-base apt-transport-https make cmake unzip python3
@@ -29,10 +29,10 @@ LC_ALL=C.UTF-8
     conda config --add channels conda-forge
     conda config --add channels bioconda
 
-% Laddar ned och installerar Stringtie
+%laddar ned och installerar Stringtie
 conda install transabyss
 
-% Laddar ned uppdateringar för Trans-Abyss
+%laddar ned uppdateringar för Trans-Abyss
 conda update transabyss
 
-% Laddar ned testdata för Trans-Abyss
+%laddar ned testdata för Trans-Abyss
