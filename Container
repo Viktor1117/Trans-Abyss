@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:20.04
+From: ubuntu:16.04
 
 SHELL=/bin/bash
 PATH=/opt/anaconda/bin:${PATH}
@@ -23,6 +23,10 @@ LC_ALL=C.UTF-8
     conda config --add channels defaults
     conda config --add channels conda-forge
     conda config --add channels bioconda
+    
+    cd /bin
+    mkdir TransAbyss
+    cd TransAbyss
 
 conda install transabyss
 
