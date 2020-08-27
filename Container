@@ -26,12 +26,14 @@ LC_ALL=C.UTF-8
     conda config --add channels conda-forge
     conda config --add channels bioconda
     
+
+    conda install -c anaconda pip
+    pip install pathlib
+    pip install python-igraph
+    
     cd /bin
     mkdir TransAbyss
     cd TransAbyss
 
-conda install transabyss
-
-conda update transabyss
-
+git clone https://github.com/bcgsc/abyss/releases/tag/2.2.4
 
