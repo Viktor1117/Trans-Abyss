@@ -35,5 +35,5 @@ LC_ALL=C.UTF-8
     mkdir TransAbyss
     cd TransAbyss
 
-git clone https://github.com/bcgsc/abyss/releases/tag/2.2.4
+git clone https://github.com/bcgsc/transabyss.git
 
